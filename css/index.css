@@ -85,7 +85,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -127,10 +126,6 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
-* {
-  box-sizing: border-box;
-  border: 1px solid black;
-}
 @font-face {
   font-family: 'Abril Fatface';
   font-style: normal;
@@ -145,33 +140,52 @@ table {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/oswald/v24/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
 }
+/* Color Theme Swatches in Hex */
 html,
 body {
   height: 100%;
   font-size: 62.5%;
   font-family: "oswald", sans-serif;
+  color: #122173;
+  background-color: #F2D16D;
 }
 h1 {
   font-family: "Abril Fatface", cursive;
+  color: #020873;
   font-size: 5rem;
 }
 h2 {
   font-family: "oswald", sans-serif;
+  color: #122173;
   font-size: 2.5rem;
 }
 h3 {
   font-family: "Abril Fatface", cursive;
+  color: #020873;
   font-size: 2rem;
 }
 p {
   font-size: 1.4rem;
   font-family: "oswald", sans-serif;
+  color: #122173;
+}
+header {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 160px;
+  justify-content: space-between;
 }
 header nav {
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #122173;
+  max-width: 100%;
   font-size: 1.6rem;
   display: flex;
-  width: 100%;
+  justify-content: space-around;
 }
 header nav a {
-  justify-content: space-around;
+  color: #F2C2CF;
 }
